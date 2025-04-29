@@ -5,6 +5,6 @@ import { PokemonService } from './pokemon.service';
 export class PokemonController {
   constructor(private readonly pokemonService: PokemonService) {}
 
-//  @Get()
-
+  //  @Get()
+  //bla bla
 }
