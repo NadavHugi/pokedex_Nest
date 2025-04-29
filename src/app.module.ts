@@ -9,7 +9,7 @@ import { AppService } from './app.service';
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: 'Nadav',
+      username: 'nadav',
       database: 'PokemonDB',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
