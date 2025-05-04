@@ -33,7 +33,7 @@ export class Pokemon {
   weight: number;
 
   @Column({ type: 'varchar', length: 50 })
-  species: number;
+  species: string;
 
   @Column({ type: 'jsonb' })
   profile: {
