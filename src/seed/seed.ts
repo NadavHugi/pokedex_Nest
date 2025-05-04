@@ -48,7 +48,6 @@ async function bootstrap() {
     },
   }));
 
-  // Persist
   for (const p of pokemons) {
     try {
       await repo.create(p);

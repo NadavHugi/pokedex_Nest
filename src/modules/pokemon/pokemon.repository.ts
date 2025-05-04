@@ -1,4 +1,3 @@
-// src/modules/pokemon/pokemon.repository.ts
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, DeepPartial } from 'typeorm';
@@ -16,10 +15,10 @@ export class PokemonRepository {
   }
 
   async findOneByID(id: number): Promise<Pokemon | null> {
+    console.log('Repository:', id);
     return this.pokemonRepository.findOneBy({ id });
   }
-
-  // ← add this method if you want to seed/create
+  //this is for seed
   async create(data: DeepPartial<Pokemon>): Promise<Pokemon> {
     const entity = this.pokemonRepository.create(data);
     return this.pokemonRepository.save(entity);
